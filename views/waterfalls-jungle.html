@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body class="main_body_blur">
+    <header>
+            <nav>
+                <a href="../index.html">
+                    <img src="../assets/logo.png" class="logo">
+                </a>
+            <ul class="nav__links">
+                <li><a href="../views/flora-fauna.html">flora & fauna</a></li>
+                <li><a href="../views/waterfalls-jungle.html">waterfalls & jungle</a></li>
+                <li><a href="../views/activities.html">activities</a></li>
+                <li><a href="../views/contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- aca quiero hacer como dos paginas en una, y que las imagenes de cada una se pasen solas con un efecto y que haya posibilidad solo de alternar entre waterfalls y jungles mostrando un solo contenido a la vez -->
+
+<section>
+    <h1 class=title_pages>Waterfalls</h1>
+          <div id="carouselWaterfalls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="../assets/waterfall.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../assets/waterfall-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="4000">
+                <img src="../assets/waterfall-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <p class="wj_p"><span class="wj_p-span">Nature's Majesty: The Iguazu Falls</span><br>The Iguazu Falls, nestled within the Iguazu National Park on the border between Argentina and Brazil, present an awe-inspiring spectacle of nature. Spanning approximately 2.7 kilometers, these falls consist of around 275 individual cascades, each contributing to the grandeur of the whole. Among them, the "Devil's Throat" stands out, a magnificent U-shaped waterfall towering over 80 meters high and 150 meters wide.<br>
+
+          Surrounded by dense tropical rainforest teeming with diverse flora and fauna, the falls create a constant mist that blankets the area, casting an ethereal ambiance. The sight of vibrant rainbows dancing amidst the cascading waters adds to the enchantment of the scene.<br>
+          
+          Visitors can immerse themselves in this natural wonderland through a network of well-maintained trails and viewing platforms, offering different perspectives of the falls and the surrounding landscape. Thrilling boat tours provide an up-close encounter with the powerful currents at the base of the falls, offering a unique and exhilarating experience.<br>
+          
+          Beyond their natural beauty, the Iguazu Falls hold cultural significance, revered by the indigenous Guarani people as a sacred site imbued with spiritual energy. Today, they serve as a symbol of the rich biodiversity and natural heritage of South America, attracting visitors from around the world who come to marvel at their magnificence and immerse themselves in the magic of this UNESCO World Heritage Site.</p>
+</section>
+<section>
+  <h2 class="title_pages">Jungle</h2>
+  <div id="carouselJungle" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+              <img src="../assets/jungle.jpg" class="d-block w-100" alt="Jungle 1">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+              <img src="../assets/jungle-2.jpg" class="d-block w-100" alt="Jungle 2">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+              <img src="../assets/jungle-3.jpg" class="d-block w-100" alt="Jungle 3">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselJungle" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselJungle" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div><p class="wj_p"><span class="wj_p-span">The Verdant Heart: Iguazu's Lush Jungles</span><br> 
+    The Iguazu jungles, embracing the majestic waterfalls, form a biodiverse haven teeming with life. Amidst towering trees and lush vegetation, a rich tapestry of flora and fauna thrives. Jaguars, howler monkeys, and a myriad of bird species inhabit this verdant realm. These jungles serve as vital regulators of climate, soil, and water, while also holding profound cultural significance for the Guarani people, who revere them as sacred. Conservation initiatives are underway to preserve their ecological integrity. Visitors can embark on guided expeditions to explore the jungles' wonders, offering immersive experiences that foster appreciation for their beauty and importance.</p>
+</section>
+
+    <footer>
+        <p>Copyright reserved: Designed By Theo</p><br>
+        <div class="footer_icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></i></i></a>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
