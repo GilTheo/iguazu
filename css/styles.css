@@ -79,7 +79,7 @@ header {
     height: 100vh;
 }
 
-.offcanvas-body {
+.offcanvas-body .nav-item{
     padding-top: 2rem;
 }
 
@@ -275,7 +275,7 @@ footer {
     padding: 0 1rem 1rem 0;
 }
 
-.ff_flex_container_flora .f_title{
+.flora .f_title{
     text-align: left;
 }
 
@@ -286,12 +286,12 @@ footer {
     justify-content: center;
 }
 
-.ff_flex_container_fauna div p {
+.fauna div p {
     text-align: right;
     padding-left: 3rem;
 }
 
-.ff_flex_container_flora div p {
+.flora div p {
     text-align: left;
     padding-right: 3rem;
 }
@@ -347,7 +347,7 @@ footer {
 
 /*-------------------- FLORA & FAUNA IMAGES -----------------------*/
 
-.f__img {
+.f_img {
     border-radius: 2rem;
     aspect-ratio: 1/1;
     width: 18rem;
@@ -492,10 +492,6 @@ input:hover {
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 
-    /* navbar */
-
-
-
     /* footer */
 
 footer {
@@ -512,7 +508,7 @@ footer {
     }
 
     .title h1 {
-        font-size: 10rem;
+        font-size: 8rem;
     }
 
     .main_img{
@@ -526,7 +522,7 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-        padding: 0;
+        padding: 3rem;
         width: 95%;
         margin: 0 auto;
     }
@@ -543,6 +539,27 @@ footer {
 
     .mobile {
         display: none;
+    }
+
+    /* fauna & flora */
+
+    .ff_flex, .ff_flex_flora {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding: 2rem;
+    }
+
+
+
+    .ff_flex_flora .f_title, .ff_flex .f_title {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .ff_flex_flora .f_p, .ff_flex .f_p {
+        text-align: center;
+        padding: 0;
     }
 
     /* grid */
@@ -567,6 +584,11 @@ footer {
     .grid-items{
         align-self: center;
         justify-self: center;
+    }
+
+    .grid-items img {
+        width: 35rem;
+        height: auto;
     }
     
     .activities_img {
