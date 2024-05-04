@@ -35,42 +35,63 @@ html {
 
 /* ------------------ HEADER ---------------------- */
 
-header nav{
-    height: 9rem;
-    width: 100%;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.container-fluid {
+    margin-top: -1rem;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(0px);
+}
+
+
+.nav-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
     font-size: 2rem;
+    padding: 0 1rem 0 2rem;
 }
 
-
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    padding-right: 5rem;
-}
-
-nav li a {
+.nav-link {
     text-transform: uppercase;
     text-decoration: none;
     color: rgba(62,68,45);
-    padding: 2rem 3rem;
 }
 
-.logo {
+.navbar-brand img{
     width: 15rem;
-    margin-top: 3rem;
-    margin-left: 3rem;
+}
+
+.offcanvas-title {
+    width: 10rem;
+}
+
+.offcanvas {
+    height: 100vh;
+}
+
+.offcanvas-body {
+    padding-top: 2rem;
+}
+
+.navbar-toggler, .btn-close {
+    border: none;
+    font-size: 2.2rem;
+    margin-right: 1rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    border: none;
+    outline:none;
 }
 
 /* ---------------------------- TITLES -------------------------------- */
@@ -83,7 +104,7 @@ nav li a {
     font-weight: 400;
     font-style: normal;
     color: white;
-    margin: 5rem 0;
+    margin: 0 0 5 0;
 }
 
 
@@ -497,7 +518,7 @@ footer {
     .main_img{
         text-align: center;
         margin: 0;
-        margin-bottom: 1rem;
+        margin: 1rem;
     }
 
     .main_info {
@@ -505,6 +526,9 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
     }
 
     .main_info h3 {
@@ -515,6 +539,10 @@ footer {
     .main_info p {
         text-align: center;
         padding: 0.2rem;
+    }
+
+    .mobile {
+        display: none;
     }
 
     /* grid */
