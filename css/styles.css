@@ -21,7 +21,7 @@ html {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main_body_blur {
@@ -30,7 +30,7 @@ html {
     background-position: top;
     background-size: cover;
     backdrop-filter: blur(2px);
-    overflow-x: hidden;
+    overflow: hidden;
 } 
 
 /* ------------------ HEADER ---------------------- */
@@ -491,13 +491,6 @@ input:hover {
 /* mobile */
 
 @media screen and (min-width: 320px) and (max-width: 767px){
-
-
-    /* background-img */
-
-    .main_body {
-        width: fit-content;
-    }
 
     /* footer */
 
