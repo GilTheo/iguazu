@@ -492,6 +492,13 @@ input:hover {
 
 @media screen and (min-width: 320px) and (max-width: 767px){
 
+
+    /* background-img */
+
+    .main_body {
+        width: fit-content;
+    }
+
     /* footer */
 
     footer {
