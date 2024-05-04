@@ -38,7 +38,7 @@ html {
 header {
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 150;
 }
 
 .container-fluid {
@@ -73,10 +73,6 @@ header {
 
 .offcanvas-title {
     width: 10rem;
-}
-
-.offcanvas {
-    height: 100vh;
 }
 
 .offcanvas-body .nav-item{
@@ -494,10 +490,10 @@ input:hover {
 
     /* footer */
 
-footer {
-    display: flex;
-    flex-direction: column;
-}
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 
     /* index.html */
 
