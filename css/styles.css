@@ -41,13 +41,6 @@ header {
     z-index: 150;
 }
 
-.container-fluid {
-    margin-top: -1rem;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(0px);
-}
-
-
 .nav-item {
     display: flex;
     flex-direction: row;
@@ -75,23 +68,19 @@ header {
     width: 15rem;
 }
 
-.offcanvas-title {
-    width: 10rem;
+.offcanvas-header a img {
+    padding: 2rem;
+    width: 15rem;
 }
 
 .offcanvas-body .nav-item{
-    padding-top: 2rem;
+    padding-bottom: 2rem;
     z-index: 160;
 }
 
 .navbar-toggler, .btn-close {
     border: none;
     font-size: 2.2rem;
-}
-
-.navbar-toggler:focus, .btn-close:focus {
-    border: none;
-    outline:none;
 }
 
 /* ---------------------------- TITLES -------------------------------- */
@@ -508,7 +497,7 @@ input:hover {
     }
 
     .title h1 {
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
     .main_img{
@@ -528,7 +517,7 @@ input:hover {
     }
 
     .main_info h3 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
     }
 
