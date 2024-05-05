@@ -587,6 +587,7 @@ input:hover {
 
     form {
         width: 90%;
+        margin: auto;
     }
 
     form .form_group {
