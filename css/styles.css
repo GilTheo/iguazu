@@ -585,8 +585,13 @@ input:hover {
 
     /* form */
 
+    form {
+        width: 90%;
+    }
+
     form .form_group {
-        display: block;
+        display: flex;
+        flex-direction: column;
         font-size: 1.6rem;
         padding: 2rem 1rem;
         text-align: center;
