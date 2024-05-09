@@ -1,0 +1,13 @@
+.carousel-inner {
+    width: 90%;
+    margin: auto;
+    border-radius: 0.7rem;
+        .carousel-item {
+            img {
+            height: 65rem;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+            object-position: center;
+        }
+    }
+}

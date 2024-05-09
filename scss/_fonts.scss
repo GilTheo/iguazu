@@ -1,0 +1,59 @@
+.title {
+    text-align: right;
+    color: white;
+    padding: 15rem 8rem 32rem 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        h1 {
+            font-size: 14rem;
+        }
+    }
+    .mainsubtitle {
+        font-size: 3rem;
+    }
+.title_pages {
+    text-align: center;
+    font-size: 7rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin: 0 0 5 0;
+}
+.f_title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3rem;
+    color: rgba(62,68,45);
+    background-color: white;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 0 1rem 1rem 0;
+}
+.flora {
+    .f_title{
+        text-align: left;
+    }
+}
+.f_p, .wj_p {
+    text-align: left;
+    font-size: 2.3rem;
+    letter-spacing: 0.05rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(62,68,45);
+    background-color: white;
+    border-radius: 1rem;
+}
+.wj_p {
+    margin: 3rem 8rem;
+    padding: 2rem;
+        span {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+}
