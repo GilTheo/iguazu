@@ -73,19 +73,24 @@ html {
   padding: 0;
 }
 
-.main_body {
-  background-image: url(../assets/iguazu-copia.jpg);
+.main_body, .main_body-2 {
+  background-image: url(../assets/iguazu.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   overflow-x: hidden;
 }
-.main_body header {
+
+.main_body-2 {
+  background-image: url(../assets/iguazu-2.jpg);
+}
+
+header {
   position: sticky;
   top: 0;
   z-index: 150;
 }
-.main_body header .nav-item {
+header .nav-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -97,23 +102,30 @@ html {
   font-size: 2rem;
   padding: 0 1rem 0 2rem;
 }
-.main_body header .nav-item .nav-link {
+header .nav-item .nav-link {
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(62, 68, 45);
+  transition: transform 0.1s ease-in-out;
 }
-.main_body header .navbar-brand img {
+header .nav-item .nav-link:hover {
+  transform: scale(1.05);
+}
+header .navbar-brand img {
   width: 15rem;
 }
-.main_body header .offcanvas-header a img {
+header .navbar-brand img:hover {
+  transform: scale(1.1);
+}
+header .offcanvas-header a img {
   padding: 2rem;
   width: 15rem;
 }
-.main_body header .offcanvas-body .nav-item {
+header .offcanvas-body .nav-item {
   padding-bottom: 2rem;
   z-index: 160;
 }
-.main_body header .navbar-toggler, .main_body header .btn-close {
+header .navbar-toggler, header .btn-close {
   border: none;
   font-size: 2.2rem;
   margin-right: 2rem;
@@ -253,6 +265,10 @@ footer .footer_icons a i:hover {
 .grid-items {
   justify-self: center;
   align-self: center;
+  transition: transform 0.3s ease-in-out;
+}
+.grid-items:hover {
+  transform: scale(1.1);
 }
 
 .grid-item-1 img, .grid-item-3 img, .grid-item-4 img {
@@ -437,7 +453,7 @@ form .button:hover {
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
   .main_info .main_img {
@@ -519,7 +535,7 @@ form .button:hover {
   }
 }
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .main_info {
     padding: 2rem 4rem 2rem 2rem;
     width: -moz-fit-content;

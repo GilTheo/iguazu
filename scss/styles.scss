@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+$green : rgba(62,68,45);
+
 html {
     font-size: 62.5%;
 }
@@ -13,11 +15,16 @@ html {
     padding: 0;
 }
 .main_body {
-    background-image: url(../assets/iguazu-copia.jpg);
+    background-image: url(../assets/iguazu.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     overflow-x: hidden;
+    }
+.main_body-2{
+    @extend .main_body;
+    background-image: url(../assets/iguazu-2.jpg);
+    }
     header {
         position: sticky;
         top: 0;
@@ -37,11 +44,18 @@ html {
                 text-transform: uppercase;
                 text-decoration: none;
                 color: rgba(62,68,45);
+                transition: transform 0.1s ease-in-out;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
             }
         }
         .navbar-brand {
             img{
                 width: 15rem;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
             }
         }
         .offcanvas-header{
@@ -64,7 +78,6 @@ html {
             margin-right: 2rem;
         }
     }
-}
 
 /* ---------------------------- LANDING PAGE ------------------------ */
 
@@ -169,7 +182,7 @@ html {
         align-items: center;
         justify-content: center;
         padding: 3rem;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
             .main_img {
                 text-align: center;
@@ -266,7 +279,7 @@ html {
 
 /* tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1200px){
 
     .main_info {
         padding: 2rem 4rem 2rem 2rem;
@@ -318,6 +331,6 @@ html {
 
 /* desktop */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1201px){
 
 }
