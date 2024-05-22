@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: $green;
+    font-size: 1.6rem;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 8rem;
+        .footer_icons{
+            a {
+                i {
+                    font-size: 3rem;
+                    color: $white;
+                    &:hover {
+                        color: rgb(202, 202, 202);
+                    }
+                    margin: 1rem 2rem;
+                }   
+            }
+        }
+}

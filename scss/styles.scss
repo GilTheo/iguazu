@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $green : rgba(62,68,45);
+$white : rgb(255,255,255);
+$orange : #ad744d;
 
 html {
     font-size: 62.5%;
@@ -9,6 +11,8 @@ html {
 /*---------------------- BODY ----------------------*/
 
 @import "fonts";
+@import "header";
+@import "footer";
 
 * {
     margin: 0;
@@ -25,59 +29,6 @@ html {
     @extend .main_body;
     background-image: url(../assets/iguazu-2.jpg);
     }
-    header {
-        position: sticky;
-        top: 0;
-        z-index: 150;
-        .nav-item {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 800;
-            font-style: normal;
-            font-size: 2rem;
-            padding: 0 1rem 0 2rem;
-            .nav-link {
-                text-transform: uppercase;
-                text-decoration: none;
-                color: rgba(62,68,45);
-                transition: transform 0.1s ease-in-out;
-                    &:hover {
-                        transform: scale(1.05);
-                    }
-            }
-        }
-        .navbar-brand {
-            img{
-                width: 15rem;
-                    &:hover {
-                        transform: scale(1.1);
-                    }
-            }
-        }
-        .offcanvas-header{
-            a {
-                img {
-                padding: 2rem;
-                width: 15rem;
-            }
-            }
-        }
-        .offcanvas-body {
-            .nav-item{
-                padding-bottom: 2rem;
-                z-index: 160;
-            }
-        }
-        .navbar-toggler, .btn-close {
-            border: none;
-            font-size: 2.2rem;
-            margin-right: 2rem;
-        }
-    }
 
 /* ---------------------------- LANDING PAGE ------------------------ */
 
@@ -86,7 +37,7 @@ html {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: $white;
     border-radius: 2rem;
     margin: 0 7rem;
     padding: 4rem 5rem;
@@ -110,45 +61,12 @@ html {
         .main_img {
             border-radius: 2rem;
             aspect-ratio: 1/1;
-            border: solid white 0.3rem;
+            border: solid $white 0.3rem;
             width: 30rem;
             object-fit: cover;
             margin-right: 7rem;
         }
 }
-
-/* ---------------------------- FOOTER ------------------------ */
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-        background-color: rgba(62,68,45);
-        font-size: 1.6rem;
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        margin-top: 8rem;
-            .footer_icons{
-                a {
-                    i {
-                        font-size: 3rem;
-                        color: white;
-                        &:hover {
-                            color: rgb(202, 202, 202);
-                        }
-                        margin: 1rem 2rem;
-                    }   
-                }
-            }
-    }
-
 
 @import "activities";
 @import "form";
@@ -217,6 +135,19 @@ html {
                 text-align: center;
                 padding: 0;
             }
+    }
+
+// waterfalls&jungles
+
+    .section_w {
+        p {
+            margin: 3rem;
+        }
+    }
+    .section_j {
+        p {
+            margin: 3rem;
+        }
     }
 
     /* grid */
@@ -297,9 +228,9 @@ html {
         text-align: justify;
         padding: 0;
         }
-        .mobile {
-            display: none;
-        }
+    }
+    .mobile {
+        display: none;
     }
 
 // activities-grid 
@@ -327,6 +258,44 @@ html {
         }
     }
 
+// waterfalls & jungles    
+
+    .section_w {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 2rem;
+        align-items: center;
+        justify-content: center;
+            p {
+                width: 50%;
+                margin: 0;
+            }
+            div {
+                padding: 0;
+                height: 60rem;
+            }
+    }
+    .section_j {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+        align-items: center;
+        justify-content: center;
+            p {
+                width: 50%;
+                margin: 2rem;
+            }
+            div {
+                padding: 0;
+                height: 60rem;
+            }
+    }
+
+// flora&fauna
+
+    .ff_flex,.ff_flex_flora{
+        width: 90%;
+    }
 }
 
 /* desktop */
